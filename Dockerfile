@@ -17,7 +17,7 @@ RUN apk --no-cache add \
 RUN pip install ansible markupsafe
 
 # Install cloud providers dependencies
-RUN pip install boto dopy==0.3.5 "apache-libcloud>=0.17.0" linode-python pyrax
+RUN pip install boto3 boto dopy==0.3.5 "apache-libcloud>=1.5.0" linode-python pyrax
 
 # Clone latest streisand code
 RUN git clone https://github.com/jlund/streisand.git
